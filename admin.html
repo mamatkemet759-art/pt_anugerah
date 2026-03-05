@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin PT Anugerah</title>
+<link rel="stylesheet" href="admin.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header">Admin Panel PT ANUGERAH</div>
+<div class="container">
+
+<div class="card animate-card">
+<h3>Kontrol User</h3>
+<select id="selectUser"></select>
+<input id="tambahSaldo" type="number" placeholder="Tambah saldo">
+<button onclick="adminTambah()">Tambah Saldo</button>
+<button onclick="resetSaldo()">Reset Saldo</button>
+<button onclick="hapusUser()">Hapus User</button>
+</div>
+
+<div class="card animate-card">
+<h3>Daftar User & Saldo</h3>
+<ul id="userList"></ul>
+</div>
+
+<div class="card animate-card">
+<h3>Riwayat Semua User</h3>
+<ul id="riwayatAdmin"></ul>
+</div>
+
+<div id="popup" class="popup"></div>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

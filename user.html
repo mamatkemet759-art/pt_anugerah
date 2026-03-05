@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User PT Anugerah</title>
+<link rel="stylesheet" href="user.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="header">User Panel PT ANUGERAH</div>
+<div class="container">
+
+<div id="loginCard" class="card animate-card">
+<h3>Login / Register</h3>
+<input id="username" placeholder="Username">
+<button onclick="login()">Masuk</button>
+</div>
+
+<div id="userApp" class="app" style="display:none">
+<div class="card saldoCard animate-card">
+<h3>Saldo Anda</h3>
+<h2 id="saldo">0</h2>
+</div>
+
+<div class="card animate-card">
+<h3>Ajukan Pinjaman</h3>
+<select id="pinjaman">
+<option value="100000">100.000</option>
+<option value="500000">500.000</option>
+<option value="1000000">1.000.000</option>
+</select>
+<button onclick="pinjam()">Ajukan</button>
+<p class="small">Potongan admin 5%</p>
+</div>
+
+<div class="card animate-card">
+<h3>Top Up Saldo</h3>
+<input id="topup" type="number" placeholder="Jumlah">
+<button onclick="topup()">Top Up</button>
+<p class="small">Simulasi DANA/GoPay<br>Rhasya Al Habsyi Ramadhan<br>083890327115</p>
+</div>
+
+<div class="card animate-card">
+<h3>Riwayat Transaksi</h3>
+<ul id="riwayat"></ul>
+</div>
+
+</div>
+
+<div id="popup" class="popup"></div>
+
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>
